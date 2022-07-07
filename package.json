@@ -3,6 +3,6 @@
     "firebase": "^9.8.4"
   },
   "scripts": {
-    "build": "firebase deploy"
+    "build": "npm install firebase && firebase deploy"
   }
 }
