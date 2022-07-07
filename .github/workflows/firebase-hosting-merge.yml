@@ -8,7 +8,7 @@ on:
       - 'main'
 defaults:
   run:
-    working-directory: 'packages/frontend'
+    working-directory: 'website'
 jobs:
   deploy:
     name: Deploy
