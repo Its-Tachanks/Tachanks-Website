@@ -3,14 +3,9 @@
 
 name: Build & Deploy Web App
 on:
-  pull_request:
-    paths:
-      - 'packages/frontend/**'
   push:
     branches:
       - 'main'
-    paths:
-      - 'packages/frontend/**'
 defaults:
   run:
     working-directory: 'packages/frontend'
