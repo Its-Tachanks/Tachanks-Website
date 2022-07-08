@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Quandale() {
-    return <div><img src='./Assets/Quandale.jpg' alt='balls'/></div>
+    return <img src='Quandale.jpg' alt='balls' />
 }
 
 export default Quandale;
