@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { addDoc, collection } from "@firebase/firestore";
-import { firestore } from "../firebase";
 
 class Counter extends Component {
   state = {
-    count: 0,
-    imageUrl: "https://picsum.photos/200",
+    count: 1,
   };
 
   styles = {
@@ -24,8 +21,8 @@ class Counter extends Component {
   }
 
   getBadgeClasses() {
-    let classes = "badge m-2 badge-";
-    classes += this.state.count === 0 ? "caution" : "primary";
+    let classes = "badge m-2 bg-";
+    classes += this.state.count === 0 ? "warning" : "primary";
     return classes;
   }
 
