@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { addDoc, collection } from "@firebase/firestore";
+import { firestore } from "../firebase";
 
 class Counter extends Component {
   state = {
@@ -12,15 +14,19 @@ class Counter extends Component {
   };
 
   render() {
-    const { imageUrl } = this.state;
+    // const { imageUrl } = this.state;
     return (
       <div>
-        <span style={this.styles} className="badge bg-danger m-2 bg-med">
-          {this.formatCount()}
-        </span>
+        <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
       </div>
     );
+  }
+
+  getBadgeClasses() {
+    let classes = "badge m-2 badge-";
+    classes += this.state.count === 0 ? "caution" : "primary";
+    return classes;
   }
 
   formatCount() {
