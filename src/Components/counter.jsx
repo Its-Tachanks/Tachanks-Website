@@ -2,20 +2,35 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 1,
-    tags: ["ball 1", "ball 2", "ball 3"],
+    count: 0,
+    tags: ["ball 1", "ball 2", "ball 3", "ball 4"],
   };
 
+  constructor() {
+    super();
+    this.handleIncrement = this.handleIncrement.bind(this);
+  }
+
+  handleIncrement() {
+    this.setState({ count: this.state.count + 1 });
+  }
+
   render() {
-    // const { imageUrl } = this.state;
     return (
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button className="btn btn-secondary btn-sm">Click for balls</button>
+        <button
+          onClick={this.handleIncrement}
+          className="btn btn-secondary btn-sm"
+        >
+          Click for balls
+        </button>
         <ul>
-          {this.state.tags.map((tag) => (
-            <li>{tag}</li>
-          ))}
+          {this.state.tags.length === 4 ? (
+            this.state.tags.map((tag) => <li key={tag}>{tag}</li>)
+          ) : (
+            <p>it isnt 4 long</p>
+          )}
         </ul>
       </div>
     );
@@ -29,7 +44,7 @@ class Counter extends Component {
 
   formatCount() {
     const { count } = this.state;
-    return count === 0 ? "Zero" : count;
+    return count === 0 ? "Zero" + " balls!" : count + " balls!";
   }
 }
 
