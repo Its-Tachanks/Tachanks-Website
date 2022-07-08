@@ -3,11 +3,7 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: 1,
-  };
-
-  styles = {
-    fontSize: 20,
-    fontWeight: "bold",
+    tags: ["ball 1", "ball 2", "ball 3"],
   };
 
   render() {
@@ -16,6 +12,11 @@ class Counter extends Component {
       <div>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Click for balls</button>
+        <ul>
+          {this.state.tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
       </div>
     );
   }
