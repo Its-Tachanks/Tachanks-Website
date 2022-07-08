@@ -9,6 +9,7 @@ class Counter extends Component {
   constructor() {
     super();
     this.handleIncrement = this.handleIncrement.bind(this);
+    this.formatCount = this.formatCount.bind(this);
   }
 
   handleIncrement() {
@@ -44,7 +45,17 @@ class Counter extends Component {
 
   formatCount() {
     const { count } = this.state;
-    return count === 0 ? "Zero" + " balls!" : count + " balls!";
+    let exNum = ``;
+    if (count === 0) {
+      return "Zero balls.";
+    } else if (count === 1) {
+      return "1 ball!";
+    } else {
+      for (let i = 0; i < count; i++) {
+        exNum += `!`;
+      }
+      return count + ` balls` + exNum;
+    }
   }
 }
 
