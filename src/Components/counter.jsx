@@ -34,7 +34,7 @@ class Counter extends Component {
           )}
         </ul>
         <iframe
-          src="https://y8.com/embed/slope"
+          src="https://games.cdn.famobi.com/html5games/o/om-nom-run/v1240/?fg_domain=play.famobi.com&fg_aid=A1000-111&fg_uid=abe80572-560a-444d-baf7-2fa4a7b2c02f&fg_pid=e37ab3ce-88cd-4438-9b9c-a37df5d33736&fg_beat=178&original_ref=https%3A%2F%2Fplay.famobi.com%2Fom-nom-run"
           scrolling="no"
           width="960"
           height="600"
