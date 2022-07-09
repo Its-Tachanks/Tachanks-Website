@@ -2,55 +2,38 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    count: 0,
-    tags: ["ball 1", "ball 2", "ball 3", "ball 4"],
+    value: this.props.value,
   };
 
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-    this.formatCount = this.formatCount.bind(this);
-  }
-
-  handleIncrement() {
-    this.setState({ count: this.state.count + 1 });
-  }
+  handleIncrement = (num) => {
+    this.setState({ value: this.state.value + num });
+  };
 
   render() {
+    console.log(this.props);
+
     return (
       <div>
+        {this.props.children}
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
-          onClick={this.handleIncrement}
+          onClick={() => this.handleIncrement(1)}
           className="btn btn-secondary btn-sm"
         >
           Click for balls
         </button>
-        <ul>
-          {this.state.tags.length === 4 ? (
-            this.state.tags.map((tag) => <li key={tag}>{tag}</li>)
-          ) : (
-            <p>it isnt 4 long</p>
-          )}
-        </ul>
-        <iframe
-          src="https://y8.com/embed/slope"
-          scrolling="no"
-          width="960"
-          height="600"
-        />
       </div>
     );
   }
 
-  getBadgeClasses() {
+  getBadgeClasses = () => {
     let classes = "badge m-2 bg-";
-    classes += this.state.count === 0 ? "warning" : "primary";
+    classes += this.state.value === 0 ? "warning" : "primary";
     return classes;
-  }
+  };
 
-  formatCount() {
-    const { count } = this.state;
+  formatCount = () => {
+    const { value: count } = this.state;
     let exNum = ``;
     if (count === 0) {
       return "Zero balls.";
@@ -62,7 +45,7 @@ class Counter extends Component {
       }
       return count + ` balls` + exNum;
     }
-  }
+  };
 }
 
 export default Counter;
