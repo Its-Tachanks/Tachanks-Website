@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Counter extends Component {
   state = {
@@ -10,17 +11,21 @@ class Counter extends Component {
   };
 
   render() {
-    console.log(this.props);
-
     return (
-      <div>
-        {this.props.children}
+      <React.Fragment>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+
         <button
           onClick={() => this.handleIncrement(1)}
           className="btn btn-secondary btn-sm"
-        ></button>
-      </div>
+        >
+          Click for balls
+        </button>
+
+        <nav>
+          <Link to="/games">Invoices</Link>
+        </nav>
+      </React.Fragment>
     );
   }
 
@@ -34,14 +39,14 @@ class Counter extends Component {
     const { value: count } = this.state;
     let exNum = ``;
     if (count === 0) {
-      return "Zero .";
+      return "Zero balls.";
     } else if (count === 1) {
-      return "1 !";
+      return "1 ball!";
     } else {
       for (let i = 0; i < count; i++) {
         exNum += `!`;
       }
-      return count + ` ` + exNum;
+      return count + ` balls` + exNum;
     }
   };
 }

@@ -3,7 +3,7 @@
   "name": "Tachanks Website",
   "icons": [
     {
-      "src": "./favicon.ico",
+      "src": "public/images/favicon.ico",
       "sizes": "256x256",
       "type": "image/x-icon"
     }
