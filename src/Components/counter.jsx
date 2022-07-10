@@ -23,7 +23,7 @@ class Counter extends Component {
         </button>
 
         <nav>
-          <Link to="/games">Invoices</Link>
+          <Link to="/games">games</Link>
         </nav>
       </React.Fragment>
     );
