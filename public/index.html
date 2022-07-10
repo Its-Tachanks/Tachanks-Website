@@ -12,34 +12,40 @@
   </head>
   <body>
     <video autoplay loop id="vidBg" class="bgVideo">
-      <source src="./weekVideos/sunday.mp4" id="vidBgSrc">
     </video>
     <script>
-      let doc = document.getElementById("vidBgSrc")
+      // The Script below handles the homepage's video background
+      // Every the created source is different with a new video
+      const vidSrc = document.createElement("source")
+      vidSrc.src = getDay()
+      vidSrc.type = "video/mp4"
+      document.getElementById("vidBg").appendChild(vidSrc)
 
-      switch (new Date().getDay()) {
-        case 0:
-        console.log("sunday")
-          doc.src = "./weekVideos/sunday.mp4"
-          break;
-        case 1:
-          doc.src = "./weekVideos/monday.mp4"
-          break;
-        case 2:
-          doc.src = "./weekVideos/tuesday.mp4"
-          break;
-        case 3:
-          doc.src = "./weekVideos/wednesday.mp4"
-          break;
-        case 4:
-          doc.src = "./weekVideos/thursday.mp4"
-          break;
-        case 5:
-          doc.src = "./weekVideos/friday.mp4"
-          break;
-        case 6:
-          doc.src = "./weekVideos/saturday.mp4"
+      function getDay () {
+        switch (new Date().getDay()) {
+          case 0:
+            return "./weekVideos/sunday.mp4"
+            break;
+          case 1:
+            return "./weekVideos/monday.mp4"
+            break;
+          case 2:
+            return "./weekVideos/tuesday.mp4"
+            break;
+          case 3:
+            return "./weekVideos/wednesday.mp4"
+            break;
+          case 4:
+            return "./weekVideos/thursday.mp4"
+            break;
+          case 5:
+            return "./weekVideos/friday.mp4"
+            break;
+          case 6:
+            return "./weekVideos/saturday.mp4"
+        }
       }
+      
     </script>
     <div id="root">
       <!--
