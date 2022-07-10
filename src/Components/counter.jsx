@@ -19,9 +19,7 @@ class Counter extends Component {
         <button
           onClick={() => this.handleIncrement(1)}
           className="btn btn-secondary btn-sm"
-        >
-          Click for balls
-        </button>
+        ></button>
       </div>
     );
   }
@@ -36,14 +34,14 @@ class Counter extends Component {
     const { value: count } = this.state;
     let exNum = ``;
     if (count === 0) {
-      return "Zero balls.";
+      return "Zero .";
     } else if (count === 1) {
-      return "1 ball!";
+      return "1 !";
     } else {
       for (let i = 0; i < count; i++) {
         exNum += `!`;
       }
-      return count + ` balls` + exNum;
+      return count + ` ` + exNum;
     }
   };
 }
