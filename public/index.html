@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="index.css" />
     <title>Tachanks' Homepage</title>
     </style>
   </head>
   <body>
-    <div id="bg"></div>
+    <video autoplay loop id="vidBg" class="bgVideo">
+      <source src="./weekVideos/sunday.mp4" id="vidBgSrc">
+    </video>
+    <script>
+      let doc = document.getElementById("vidBgSrc")
+
+      switch (new Date().getDay()) {
+        case 0:
+        console.log("sunday")
+          doc.src = "./weekVideos/sunday.mp4"
+          break;
+        case 1:
+          doc.src = "./weekVideos/monday.mp4"
+          break;
+        case 2:
+          doc.src = "./weekVideos/tuesday.mp4"
+          break;
+        case 3:
+          doc.src = "./weekVideos/wednesday.mp4"
+          break;
+        case 4:
+          doc.src = "./weekVideos/thursday.mp4"
+          break;
+        case 5:
+          doc.src = "./weekVideos/friday.mp4"
+          break;
+        case 6:
+          doc.src = "./weekVideos/saturday.mp4"
+      }
+    </script>
     <div id="root">
       <!--
         What is below will not render, it is only shown while react components are loading
