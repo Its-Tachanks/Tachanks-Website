@@ -1,0 +1,32 @@
+.bgVideo {
+    position:static;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ff5a5a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(235, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 0, 0);
+}

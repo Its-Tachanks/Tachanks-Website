@@ -5,10 +5,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.css'
+import "./index.css"
 
 import Counters from './Components/counters'
-import Counter from './Components/counter'
+
 import Game from './Components/game'
 
 const root = createRoot(document.getElementById('root'))
