@@ -9,18 +9,23 @@ import "./index.css"
 
 import Counters from './Components/counters'
 
-import Game from './Components/game'
+import Navbar from "./Components/Navbar";
 
 const root = createRoot(document.getElementById('root'))
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Counters />} />
-      <Route path="games" element={<Game />} />
+      <Route path="games" element={<Counters />} />
     </Routes>
   </BrowserRouter>
 );
 
-for (let i = 1; i <= 10; i++) {
+const navbar = createRoot(document.getElementById('navbar'))
+navbar.render(
+  <Navbar />
+);
+
+for (let i = 1; i <= 1; i++) {
   console.error(i + ". Stop fucking with my website")
 }
