@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="H">
+    <!--Weird Stuff-->
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="landingPage.css" />
+    
+    <!--Visual Elements-->
+      <!--Tab Title-->
     <title>Tachanks' Homepage</title>
-    </style>
-  </head>
-  <body>
-    <video autoplay loop id="vidBg" class="bgVideo">
-    </video>
-    <script>
-      // The Script below handles the homepage's video background
-      // Every the created source is different with a new video
-      const vidSrc = document.createElement("source")
-      vidSrc.src = getDay()
-      vidSrc.type = "video/mp4"
-      document.getElementById("vidBg").appendChild(vidSrc)
+      <!--Favicon-->
+    <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
 
-      function getDay () {
-        switch (new Date().getDay()) {
-          case 0:
-            return "./weekVideos/sunday.mp4"
-            break;
-          case 1:
-            return "./weekVideos/monday.mp4"
-            break;
-          case 2:
-            return "./weekVideos/tuesday.mp4"
-            break;
-          case 3:
-            return "./weekVideos/wednesday.mp4"
-            break;
-          case 4:
-            return "./weekVideos/thursday.mp4"
-            break;
-          case 5:
-            return "./weekVideos/friday.mp4"
-            break;
-          case 6:
-            return "./weekVideos/saturday.mp4"
+    <!--CSS & Styling-->
+      <!--Universal Website CSS-->
+    <link rel="stylesheet" href="landingPage.css" />
+      <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <!--Start of actual webpage-->
+  <body>
+    <!--This div contains permanently shown webpage elements-->
+    <div id="static">
+      <!--Basis for the video background-->
+      <video autoplay loop id="vidBg" class="bgVideo">
+      </video>
+      <script>
+        // The Script below handles the homepage's video background
+        // Every day the created source is different 
+        // with a new video based on the weekday name
+        const vidSrc = document.createElement("source")
+        vidSrc.src = getDay()
+        vidSrc.type = "video/mp4"
+        document.getElementById("vidBg").appendChild(vidSrc)
+
+        // Function that returns the day's name
+        function getDay () {
+          switch (new Date().getDay()) {
+            case 0:
+              return "./weekVideos/sunday.mp4"
+              break;
+            case 1:
+              return "./weekVideos/monday.mp4"
+              break;
+            case 2:
+              return "./weekVideos/tuesday.mp4"
+              break;
+            case 3:
+              return "./weekVideos/wednesday.mp4"
+              break;
+            case 4:
+              return "./weekVideos/thursday.mp4"
+              break;
+            case 5:
+              return "./weekVideos/friday.mp4"
+              break;
+            case 6:
+              return "./weekVideos/saturday.mp4"
+          }
         }
-      }
-      
-    </script>
+        
+      </script>
+    </div>
+
+    <!--This div contains all react.js rendered elements-->
     <div id="root">
-      <!--
-        What is below will not render, it is only shown while react components are loading
-      -->
+      <!--What is below will not render, it is only shown while react components are loading-->
       <img src="https://cdn.discordapp.com/attachments/745075250148016158/995382351347597312/FWMiivsWQAA0iwf.gif?size=4096" alt="false" class="beforeImg"/>
-      <!--
-        Same as above
-      -->
     </div>
   </body>
 </html>

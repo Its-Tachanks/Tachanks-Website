@@ -14,9 +14,7 @@ class Counters extends Component {
     return (
       <React.Fragment>
         {this.state.counters.map((counter) => (
-          <Counter key={counter.id} value={counter.value}>
-            <h6>balls</h6>
-          </Counter>
+          <Counter key={counter.id} value={counter.value}></Counter>
         ))}
       </React.Fragment>
     );
