@@ -1,29 +1,22 @@
 import React from "react";
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import "./index.css"
 
-import Counters from './Components/counters'
+import Home from "./Home";
+import Games from "./Games";
 
-import Navbar from "./Components/Navbar";
-
-const root = createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Counters />} />
-      <Route path="games" element={<Counters />} />
+      <Route path="/" element={<Home />} />
+      <Route path="games" element={<Games />} />
     </Routes>
   </BrowserRouter>
-);
-
-const navbar = createRoot(document.getElementById('navbar'))
-navbar.render(
-  <Navbar />
 );
 
 for (let i = 1; i <= 1; i++) {
