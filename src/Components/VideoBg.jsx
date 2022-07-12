@@ -16,7 +16,7 @@ class VideoBg extends Component {
   getDay() {
     switch (new Date().getDay()) {
       case 0:
-        return "./WeekVideos/sunday.mp4";
+        return "src/Components/WeekVideos/sunday.mp4";
         // eslint-disable-next-line
         break;
       case 1:
