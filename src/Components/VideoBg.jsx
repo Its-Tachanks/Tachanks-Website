@@ -5,10 +5,11 @@ class VideoBg extends Component {
   render() {
     return (
       <div>
-        <video autoPlay loop id="VideoBg">
+        <video width="100%" playsinline autoplay muted loop id="VideoBg">
           <source src={this.getDay()} type="video/webm" />
           Video dont work for you
         </video>
+        <script> document.getElementById('VideoBg').play(); </script>
       </div>
     );
   }

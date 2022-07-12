@@ -8,8 +8,6 @@ import {
 
 import Home from "./Home";
 import Games from "./Games";
-import VideoBg from "./Components/VideoBg";
-import Counters from "./Components/counters"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

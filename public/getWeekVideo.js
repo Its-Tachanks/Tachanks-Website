@@ -1,3 +1,14 @@
+/*
+<video autoPlay loop class="VideoBg" >
+      <source type="video/webm" id="VideoBg"/>
+      Video dont work for you
+    </video>
+    <script>
+      const vid = document.getElementById("VideoBg")
+      vid.setAttribute("src", getDay())
+    </script>
+*/
+
 function getDay() {
     switch (new Date().getDay()) {
       case 0:
