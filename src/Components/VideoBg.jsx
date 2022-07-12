@@ -16,35 +16,35 @@ class VideoBg extends Component {
   getDay() {
     switch (new Date().getDay()) {
       case 0:
-        return "%PUBLIC_URL%/WeekVideos/sunday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/sunday.mp4";
         // eslint-disable-next-line
         break;
       case 1:
-        return "%PUBLIC_URL%/WeekVideos/monday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/monday.mp4";
         // eslint-disable-next-line
         break;
       case 2:
-        return "%PUBLIC_URL%/WeekVideos/tuesday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/tuesday.mp4";
         // eslint-disable-next-line
         break;
       case 3:
-        return "%PUBLIC_URL%/WeekVideos/wednesday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/wednesday.mp4";
         // eslint-disable-next-line
         break;
       case 4:
-        return "%PUBLIC_URL%/WeekVideos/thursday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/thursday.mp4";
         // eslint-disable-next-line
         break;
       case 5:
-        return "%PUBLIC_URL%/WeekVideos/friday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/friday.mp4";
         // eslint-disable-next-line
         break;
       case 6:
-        return "%PUBLIC_URL%/WeekVideos/saturday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/saturday.mp4";
         // eslint-disable-next-line
         break;
       default:
-        return "%PUBLIC_URL%/WeekVideos/sunday.mp4";
+        return process.env.PUBLIC_URL + "/WeekVideos/sunday.mp4";
         // eslint-disable-next-line
         break;
     }
