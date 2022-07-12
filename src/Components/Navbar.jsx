@@ -3,7 +3,21 @@ import React, { Component } from "react";
 class Navbar extends Component {
   state = {};
   render() {
-    return <React.Fragment></React.Fragment>;
+    return (
+      <div className="Navbar" id="Navbar">
+        <a href="/" className="NavbarTitle">
+          Navbar Title
+        </a>
+        <ul>
+          <li className="Active">
+            <a href="/games">Games</a>
+          </li>
+          <li>
+            <a href="/random">Random Stuff</a>
+          </li>
+        </ul>
+      </div>
+    );
   }
 }
 

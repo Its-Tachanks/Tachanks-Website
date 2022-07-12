@@ -4,18 +4,19 @@ class VideoBg extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <React.Fragment>
         <video
           autoPlay
           loop
           muted
           id="VideoBg"
+          className="VideoBg"
           onClick={() => this.unmuteVid()}
         >
           <source src={this.getDay()} type="video/webm" />
           Video dont work for you
         </video>
-      </div>
+      </React.Fragment>
     );
   }
 

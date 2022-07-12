@@ -9,6 +9,8 @@ import {
 import Home from "./Home";
 import Games from "./Games";
 
+//import "./Css/Universal.css"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
