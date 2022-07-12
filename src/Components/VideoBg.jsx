@@ -4,12 +4,12 @@ class VideoBg extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <video autoplay loop id="VideoBg">
-          <source src={this.getDay}></source>
+      <div>
+        <video autoPlay loop id="VideoBg">
+          <source src={this.getDay()} type="video/mp4" />
+          Video dont work for you
         </video>
-        <h1>hi</h1>
-      </React.Fragment>
+      </div>
     );
   }
 

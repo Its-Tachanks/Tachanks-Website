@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import "./Home.css"
 import VideoBg from './Components/VideoBg';
 
 class Home extends Component {
