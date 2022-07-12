@@ -5,14 +5,24 @@ class VideoBg extends Component {
   render() {
     return (
       <div>
-        <video width="100%" playsinline autoplay muted loop id="VideoBg">
+        <video
+          autoPlay
+          loop
+          muted
+          id="VideoBg"
+          onClick={() => this.unmuteVid()}
+        >
           <source src={this.getDay()} type="video/webm" />
           Video dont work for you
         </video>
-        <script> document.getElementById('VideoBg').play(); </script>
       </div>
     );
   }
+
+  unmuteVid = () => {
+    var vid = document.getElementById("VideoBg");
+    vid.muted = false;
+  };
 
   getDay() {
     switch (new Date().getDay()) {
