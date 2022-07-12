@@ -16,35 +16,35 @@ class VideoBg extends Component {
   getDay() {
     switch (new Date().getDay()) {
       case 0:
-        return "src/Components/WeekVideos/sunday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/sunday.mp4";
         // eslint-disable-next-line
         break;
       case 1:
-        return "./WeekVideos/monday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/monday.mp4";
         // eslint-disable-next-line
         break;
       case 2:
-        return "./WeekVideos/tuesday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/tuesday.mp4";
         // eslint-disable-next-line
         break;
       case 3:
-        return "./WeekVideos/wednesday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/wednesday.mp4";
         // eslint-disable-next-line
         break;
       case 4:
-        return "./WeekVideos/thursday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/thursday.mp4";
         // eslint-disable-next-line
         break;
       case 5:
-        return "./WeekVideos/friday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/friday.mp4";
         // eslint-disable-next-line
         break;
       case 6:
-        return "./WeekVideos/saturday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/saturday.mp4";
         // eslint-disable-next-line
         break;
       default:
-        return "./WeekVideos/sunday.mp4";
+        return "%PUBLIC_URL%/WeekVideos/sunday.mp4";
         // eslint-disable-next-line
         break;
     }
