@@ -8,7 +8,6 @@ class Home extends Component {
     return (
       <div className="HomeDiv">
         <VideoBg />
-        <button onClick={this.playVid}>Balls</button>
       </div>
     );
   }
