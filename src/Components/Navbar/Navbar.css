@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap');
+
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #ba181bff;
+  --imperial-red: #e5383bff;
+  --black-shadows: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4ff;
+  --white: #ffffffff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Navbar {
+  background-color: var(--rich-black-fogra-39);
+  color: var(--cultured);
+  display: flex;
+  justify-content:space-around;
+  gap: 2rem;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.Navbar a {
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+}
+
+.Navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.NavbarTitle {
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  word-spacing: 10rem;
+  gap: 1rem
+}
+
+.NavbarLogo {
+  border-radius: 8px;
+  width: 4rem;
+}
+
+.Navbar li:hover {
+  background-color: var(--carnelian);
+  border-radius: 6px;
+}

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 // CSS Import
-import "./Css/Home.css";
+import "./CSS/Home.css";
 
 // Component Imports
-import VideoBg from "./Components/VideoBg";
-import Navbar from "./Components/Navbar";
+import VideoBg from "./Components/VideoBg/VideoBg";
+import Navbar from "./Components/Navbar/Navbar";
 
 class Home extends Component {
   render() {

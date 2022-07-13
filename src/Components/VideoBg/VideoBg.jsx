@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./VideoBg.css";
+
 class VideoBg extends Component {
   state = {};
   render() {

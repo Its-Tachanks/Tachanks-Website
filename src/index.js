@@ -10,7 +10,7 @@ import Home from "./Home";
 import Games from "./Games";
 import Random from "./Random";
 
-import "./Css/Universal.css"
+import "./CSS/Universal.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

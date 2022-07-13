@@ -1,29 +1,28 @@
 import React, { Component } from "react";
+import "./Navbar.css";
 
 class Navbar extends Component {
   state = {};
   render() {
     return (
-      <div className="Navbar" id="Navbar">
-        <a href="/">
+      <nav className="Navbar">
+        <a href="/" className="NavbarTitle">
           <img
-            src="images/NavbarLogo.png"
+            src="./images/NavbarLogo.png"
             alt="Navbar Logo"
             className="NavbarLogo"
           />
-        </a>
-        <a href="/" className="NavbarTitle">
-          Navbar Title
+          Tachanks.xyz
         </a>
         <ul>
-          <li className="Active">
+          <li>
             <a href="/games">Games</a>
           </li>
           <li>
-            <a href="/random">Random Stuff</a>
+            <a href="/random">Random</a>
           </li>
         </ul>
-      </div>
+      </nav>
     );
   }
 }
