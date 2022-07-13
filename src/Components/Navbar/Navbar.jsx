@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import ReactTypingEffect from "react-typing-effect";
 
 class Navbar extends Component {
-  state = {};
-  render() {
+  render = () => {
     return (
       <nav className="Navbar">
         <a href="/" className="NavbarTitle">
@@ -12,7 +12,11 @@ class Navbar extends Component {
             alt="Navbar Logo"
             className="NavbarLogo"
           />
-          Tachanks.xyz
+          <ReactTypingEffect
+            text={["Tachanks.xyz"]}
+            eraseSpeed="100"
+            typingDelay="2000"
+          />
         </a>
         <ul>
           <li>
@@ -24,7 +28,7 @@ class Navbar extends Component {
         </ul>
       </nav>
     );
-  }
+  };
 }
 
 export default Navbar;
