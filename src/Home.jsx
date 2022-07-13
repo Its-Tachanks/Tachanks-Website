@@ -12,7 +12,14 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <VideoBg />
+        <div className="HomeWrapper">
+          <div className="VideoBgDiv">
+            <VideoBg />
+          </div>
+          <div className="ScrollBg">
+            <h3>balllllllllllllllllllllllls</h3>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
