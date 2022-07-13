@@ -12,6 +12,7 @@ class VideoBg extends Component {
           loop
           muted
           className="VideoBg"
+          id="VideoBg"
           onClick={() => this.unmuteVid()}
         >
           <source src={this.getDay()} type="video/webm" />
