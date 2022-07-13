@@ -11,7 +11,6 @@ class VideoBg extends Component {
           autoPlay
           loop
           muted
-          id="VideoBg"
           className="VideoBg"
           onClick={() => this.unmuteVid()}
         >
