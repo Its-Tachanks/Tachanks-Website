@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import ReactTypingEffect from "react-typing-effect";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render = () => {
     return (
       <nav className="Navbar">
-        <a href="/" className="NavbarTitle">
+        <Link to="/" className="NavbarTitle">
           <img
             src="./images/NavbarLogo.png"
             alt="Navbar Logo"
@@ -17,13 +18,13 @@ class Navbar extends Component {
             eraseSpeed="100"
             typingDelay="2000"
           />
-        </a>
+        </Link>
         <ul>
           <li>
-            <a href="/games">Games</a>
+            <Link to="/games">Games</Link>
           </li>
           <li>
-            <a href="/random">Random</a>
+            <Link to="/random">Random</Link>
           </li>
         </ul>
       </nav>
