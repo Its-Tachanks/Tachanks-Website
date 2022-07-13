@@ -5,6 +5,13 @@ class Navbar extends Component {
   render() {
     return (
       <div className="Navbar" id="Navbar">
+        <a href="/">
+          <img
+            src="images/NavbarLogo.png"
+            alt="Navbar Logo"
+            className="NavbarLogo"
+          />
+        </a>
         <a href="/" className="NavbarTitle">
           Navbar Title
         </a>

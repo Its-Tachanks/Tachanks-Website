@@ -8,8 +8,9 @@ import {
 
 import Home from "./Home";
 import Games from "./Games";
+import Random from "./Random";
 
-//import "./Css/Universal.css"
+import "./Css/Universal.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="games" element={<Games />} />
+      <Route path="random" element={<Random />} />
     </Routes>
   </BrowserRouter>
 );

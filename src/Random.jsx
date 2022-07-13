@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Navbar from "./Components/Navbar";
 
-class Games extends Component {
+class Random extends Component {
   render() {
     return (
       <React.Fragment>
@@ -12,4 +12,4 @@ class Games extends Component {
   }
 }
 
-export default Games;
+export default Random;
