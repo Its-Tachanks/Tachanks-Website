@@ -32,6 +32,10 @@ body {
   gap: 2rem;
   padding: 0 1rem;
   align-items: center;
+  width: 100%;
+
+  position: fixed;
+  top: 0px;
 }
 
 .Navbar a {
@@ -47,6 +51,7 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
+  font-size: 1rem;
 }
 
 .NavbarTitle {
@@ -59,7 +64,7 @@ body {
 
 .NavbarLogo {
   border-radius: 8px;
-  width: 4rem;
+  height: 4rem;
 }
 
 

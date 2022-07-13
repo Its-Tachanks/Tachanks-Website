@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+// eslint-disable-next-line
+import VideoBgPack from "reactjs-videobg";
 
 import "./VideoBg.css";
 
@@ -18,6 +20,10 @@ class VideoBg extends Component {
           <source src={this.getDay()} type="video/webm" />
           Video dont work for you
         </video>
+
+        {/*<VideoBgPack>
+          <VideoBgPack.Source src={this.getDay()} type="video/webm" />
+        </VideoBgPack>*/}
       </React.Fragment>
     );
   }
