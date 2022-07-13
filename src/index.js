@@ -15,8 +15,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="games" element={<Games />} />
-      <Route path="random" element={<Random />} />
+      <Route path="/games" element={<Games />} />
+      <Route path="/random" element={<Random />} />
     </Routes>
   </BrowserRouter>
 );
