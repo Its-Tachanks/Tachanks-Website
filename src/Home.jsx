@@ -10,10 +10,10 @@ import Navbar from "./Components/Navbar/Navbar";
 class Home extends Component {
   render() {
     return (
-      <div className="HomeDiv">
+      <React.Fragment>
         <Navbar />
         <VideoBg />
-      </div>
+      </React.Fragment>
     );
   }
 }
