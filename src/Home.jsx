@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // CSS Import
-import "./CSS/Home.css";
+import "./Home.css";
 
 // Component Imports
 import VideoBg from "./Components/VideoBg/VideoBg";
