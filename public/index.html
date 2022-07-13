@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app" />
@@ -10,6 +10,10 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Tachanks' Homepage</title>
+
+    <link rel="stylesheet" href="test.css" />
+
+    <script src="./getWeekVideo.js" type="text/javascript" ></script>
 
     <!--CSS & Styling-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,5 +25,15 @@
   <body>
     <!--This div contains all react.js rendered elements-->
     <div id="root"></div>
+    <!--
+    <video autoPlay loop class="VideoBg" >
+      <source type="video/webm" id="VideoBg"/>
+      Video dont work for you
+    </video>
+    <script>
+      const vid = document.getElementById("VideoBg")
+      vid.setAttribute("src", getDay())
+    </script>
+    -->
   </body>
 </html>
