@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import ReactTypingEffect from "react-typing-effect";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render = () => {
@@ -17,14 +17,15 @@ class Navbar extends Component {
             text={["Tachanks.xyz"]}
             eraseSpeed="100"
             typingDelay="2000"
+            cursor="_"
           />
         </Link>
         <ul>
           <li>
-            <Link to="/games">Games</Link>
+            <NavLink to="/games">Games</NavLink>
           </li>
           <li>
-            <Link to="/random">Random</Link>
+            <NavLink to="/random">Random</NavLink>
           </li>
         </ul>
       </nav>

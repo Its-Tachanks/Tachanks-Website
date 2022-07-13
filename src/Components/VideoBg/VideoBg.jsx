@@ -24,7 +24,11 @@ class VideoBg extends Component {
 
   unmuteVid = () => {
     var vid = document.getElementById("VideoBg");
-    vid.muted = false;
+    if (vid.muted) {
+      vid.muted = false;
+    } else if (!vid.muted) {
+      vid.muted = true;
+    }
   };
 
   getDay() {

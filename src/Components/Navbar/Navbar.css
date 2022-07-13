@@ -7,6 +7,8 @@
   --ruby-red: #a4161aff;
   --carnelian: #ba181bff;
   --imperial-red: #e5383bff;
+  --faded-red: #fc6b6e;
+  --darkish-grey: #696969;
   --black-shadows: #b1a7a6ff;
   --light-gray: #d3d3d3ff;
   --cultured: #f5f3f4ff;
@@ -36,6 +38,7 @@ body {
   color: inherit;
   text-decoration: none;
   align-items: center;
+  
 }
 
 .Navbar ul {
@@ -59,7 +62,28 @@ body {
   width: 4rem;
 }
 
-.Navbar li:hover {
+
+
+.Navbar a.active {
+  animation-name: animActive;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate ;
+
+  border-radius: 6px;
+}
+
+@keyframes animActive {
+  from {
+    background-color: var(--rich-black-fogra-39);
+  }
+
+  to {
+    background-color: var(--carnelian);
+  }
+}
+
+.Navbar a:hover {
   background-color: var(--carnelian);
   border-radius: 6px;
 }
