@@ -35,6 +35,8 @@ body {
   width: 100%;
   position: fixed;
   top: 0px;
+
+  z-index: 999;
 }
 
 .Navbar a {
@@ -62,8 +64,9 @@ body {
 }
 
 .NavbarLogo {
-  border-radius: 8px;
+  border-radius: 16px;
   height: 4rem;
+  padding: .3rem;
 }
 
 

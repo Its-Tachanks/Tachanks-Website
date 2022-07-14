@@ -20,10 +20,6 @@ class VideoBg extends Component {
           <source src={this.getDay()} type="video/webm" />
           Video dont work for you
         </video>
-
-        {/*<VideoBgPack>
-          <VideoBgPack.Source src={this.getDay()} type="video/webm" />
-        </VideoBgPack>*/}
       </React.Fragment>
     );
   }

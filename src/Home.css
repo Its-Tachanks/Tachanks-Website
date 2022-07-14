@@ -13,35 +13,55 @@
   --white: #ffffffff;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
-}
-
-.HomeWrapper {
+  background-color: var(--eerie-black);
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-.StartColor {
+.Spacer {
   height: 4rem;
-  background-color: var(--rich-black-fogra-39);
+  width: auto;
+  background-color: var(--eerie-black);
 }
 
 .VideoBgDiv {
-  height: 100%;
+  height: auto;
   width: 100%;
+  background-color: var(--eerie-black);
 }
 
 .VideoBg {
   width: 100%;
   height: auto;
-  display: flex;
-  box-sizing: border-box;
-
-  margin-top: 0rem;
+  background-color: var(--eerie-black);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
-.ScrollingElement1 {
+.HomeElements {
   background-color: var(--eerie-black);
   color: var(--cultured);
+}
+
+.DayHeader {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 10;
+}
+
+.YeahBitchGif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  border: .2rem solid var(--carnelian)
+}
+
+.FunSpacer {
+  margin: 4rem;
 }
