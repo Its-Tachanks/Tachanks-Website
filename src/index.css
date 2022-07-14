@@ -1,0 +1,39 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap');
+
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #ba181bff;
+  --imperial-red: #e5383bff;
+  --black-shadows: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4ff;
+  --white: #ffffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  scrollbar-color: var(--carnelian) var(--rich-black-fogra-39);
+  scrollbar-width: thin;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+   width: 10px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px var(--rich-black-fogra-39);
+   background-color: var(--rich-black-fogra-39);
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: var(--ruby-red);
+   border-radius: 10px;
+ }

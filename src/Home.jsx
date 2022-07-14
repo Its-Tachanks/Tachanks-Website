@@ -13,11 +13,12 @@ class Home extends Component {
       <React.Fragment>
         <Navbar />
         <div className="HomeWrapper">
+          <div className="StartColor"></div>
           <div className="VideoBgDiv">
             <VideoBg />
           </div>
-          <div className="ScrollBg">
-            <h3>balllllllllllllllllllllllls</h3>
+          <div className="ScrollingElement1">
+            <h3>balllllllllllllllllll llllls</h3>
           </div>
         </div>
       </React.Fragment>

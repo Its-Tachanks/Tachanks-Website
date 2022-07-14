@@ -28,12 +28,11 @@ body {
   background-color: var(--rich-black-fogra-39);
   color: var(--cultured);
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   gap: 2rem;
   padding: 0 1rem;
   align-items: center;
   width: 100%;
-
   position: fixed;
   top: 0px;
 }
