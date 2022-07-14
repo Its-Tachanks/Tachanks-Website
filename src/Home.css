@@ -3,13 +3,14 @@
 :root {
   --rich-black-fogra-39: #0b090aff;
   --eerie-black: #171717ff;
+  --eerie-black-lighter: #2b2b2b;
   --blood-red: #660708ff;
   --ruby-red: #a4161aff;
-  --carnelian: #ba181bff;
+  --carnelian: #b9181b;
   --imperial-red: #e5383bff;
   --black-shadows: #b1a7a6ff;
   --light-gray: #d3d3d3ff;
-  --cultured: #f5f3f4ff;
+  --cultured: #f5f3f4;
   --white: #ffffffff;
 }
 
@@ -21,7 +22,13 @@ body {
   box-sizing: border-box;
 }
 
-.Spacer {
+.Whitespace {
+  height: 2rem;
+  width: auto;
+  background-color: inherit;
+}
+
+.StartSpacer {
   height: 4rem;
   width: auto;
   background-color: var(--eerie-black);
@@ -44,13 +51,12 @@ body {
 .HomeElements {
   background-color: var(--eerie-black);
   color: var(--cultured);
+  text-align: center;
 }
 
-.DayHeader {
-  margin-top: 1rem;
+.HomeElements h1 {
   margin-bottom: .5rem;
   align-items: center;
-  text-align: center;
   font-size: 10;
 }
 
@@ -59,9 +65,29 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 16px;
-  border: .2rem solid var(--carnelian)
+  border: .2rem solid var(--carnelian);
 }
 
-.FunSpacer {
-  margin: 4rem;
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 49%;
+}
+
+.linecolumn {
+  flex: 2%;
+}
+
+.StuffKnow {
+  width: 30rem;
+  height: auto;
+  border-radius: 16px;
+  border: .2rem solid var(--carnelian);
+}
+
+.GithubEmbed {
+  border-radius: 16px;
+  border: .2rem solid var(--carnelian);
 }

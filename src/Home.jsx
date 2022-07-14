@@ -12,14 +12,37 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <div className="Spacer"></div>
+        <div className="StartSpacer"></div>
         <VideoBg />
         <div className="HomeElements">
-          <h1 className="DayHeader">It's {this.getDay()}!</h1>
-          <img src="./images/YeahBitch.gif" className="YeahBitchGif" />
-          
-          <div className="FunSpacer"></div>
+          <h1>It's {this.getDay()}!</h1>
+          <img
+            src="./images/YeahBitch.gif"
+            className="YeahBitchGif"
+            alt="YeahBitch"
+          />
 
+          <div className="Whitespace"></div>
+          <img src="./images/Line.png" alt="Line" className="Line" />
+          <div className="Whitespace"></div>
+
+          <h1>But anyway...</h1>
+          <div className="row">
+            <div className="column">
+              <h2 style={{ "margin-bottom": "1rem" }}>
+                Here's some stuff I know
+              </h2>
+              <img src="./images/StuffKnow.png" className="StuffKnow"></img>
+            </div>
+            {/*<div className="linecolumn"><img src="./images/VertLine.png" alt="Vert line"/></div>*/}
+            <div className="column">
+              <h2 style={{ "margin-bottom": "1rem" }}>Other stuff</h2>
+              <embed
+                src="https://github-readme-stats.vercel.app/api?username=Its-Tachanks"
+                className="GithubEmbed"
+              />
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );
