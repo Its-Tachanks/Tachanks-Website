@@ -34,6 +34,7 @@ class VideoBg extends Component {
       vid.muted = false;
     } else if (!vid.muted) {
       vid.muted = true;
+      vid.playbackRate += 0.25;
     }
   };
 
