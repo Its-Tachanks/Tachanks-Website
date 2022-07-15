@@ -94,3 +94,9 @@ body {
   background-color: var(--carnelian);
   border-radius: 6px;
 }
+
+.NavbarSpacer {
+  height: 4rem;
+  width: auto;
+  background-color: var(--eerie-black);
+}

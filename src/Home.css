@@ -22,30 +22,11 @@ body {
   box-sizing: border-box;
 }
 
-.Whitespace {
-  height: 2rem;
-  width: auto;
-  background-color: inherit;
-}
-
-.StartSpacer {
-  height: 4rem;
-  width: auto;
-  background-color: var(--eerie-black);
-}
 
 .VideoBgDiv {
   height: auto;
   width: 100%;
   background-color: var(--eerie-black);
-}
-
-.VideoBg {
-  width: 100%;
-  height: auto;
-  background-color: var(--eerie-black);
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
 .HomeElements {
@@ -57,37 +38,16 @@ body {
 .HomeElements h1 {
   margin-bottom: .5rem;
   align-items: center;
-  font-size: 10;
+  font-size: 32px;
 }
 
-.YeahBitchGif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 16px;
-  border: .2rem solid var(--carnelian);
+.FadeInLoad {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
 }
 
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 49%;
-}
-
-.linecolumn {
-  flex: 2%;
-}
-
-.StuffKnow {
-  width: 30rem;
-  height: auto;
-  border-radius: 16px;
-  border: .2rem solid var(--carnelian);
-}
-
-.GithubEmbed {
-  border-radius: 16px;
-  border: .2rem solid var(--carnelian);
+.FadeInLoad.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
