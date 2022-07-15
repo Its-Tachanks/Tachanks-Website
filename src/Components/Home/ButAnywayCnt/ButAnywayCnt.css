@@ -1,9 +1,29 @@
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --eerie-black-lighter: #2b2b2b;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #b9181b;
+  --imperial-red: #e5383bff;
+  --black-shadows: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4;
+  --white: #ffffffff;
+}
+
 .row {
   display: flex;
 }
 
 .column {
-  flex: 49%;
+  flex: 30%;
+  padding: 0;
+  margin: 0;
+}
+
+.columnSmall {
+  flex: 20%;
 }
 
 .linecolumn {
@@ -20,4 +40,25 @@
 .GithubEmbed {
   border-radius: 16px;
   border: .2rem solid var(--carnelian);
+}
+
+.Projects a {
+  color: var(--carnelian);
+}
+
+.Projects svg {
+  background-color: "161b22";
+  color: "#f0f6fc";
+  border-radius: 16px;
+}
+
+.Projects li {
+  padding: 1.5vh;
+}
+
+.GithubBlack {
+  filter: invert(5%) sepia(6%) saturate(4259%) hue-rotate(175deg) brightness(96%) contrast(88%);
+}
+.GithubWhite {
+  filter: invert(100%) sepia(25%) saturate(4047%) hue-rotate(179deg) brightness(107%) contrast(98%);
 }

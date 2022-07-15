@@ -44,7 +44,7 @@ class Home extends Component {
             <Whitespace height="2rem" />
             <img src="./images/Line.png" alt="Line" className="Line" />
             <Whitespace height="2rem" />
-            <h1>But anyway...</h1>
+            <h3>But anyway...</h3>
             <Whitespace height="2rem" />
           </div>
 
