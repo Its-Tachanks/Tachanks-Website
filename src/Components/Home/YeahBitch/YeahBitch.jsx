@@ -5,13 +5,8 @@ import "./YeahBitch.css"
 class YeahBitch extends Component {
   render() { 
     return (
-      <section className="Jesser FadeInLoad">
+      <section className="FadeInLoad">
         <h1>It's {this.getDay()}!</h1>
-        <img
-          src="./images/YeahBitch.gif"
-          className="YeahBitchGif"
-          alt="YeahBitch"
-        />
       </section>
     );
   }

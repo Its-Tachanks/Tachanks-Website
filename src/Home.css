@@ -22,13 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-
-.VideoBgDiv {
-  height: auto;
-  width: 100%;
-  background-color: var(--eerie-black);
-}
-
 .HomeElements {
   background-color: var(--eerie-black);
   color: var(--cultured);

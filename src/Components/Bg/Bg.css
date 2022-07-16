@@ -1,0 +1,66 @@
+:root {
+  --rich-black-fogra-39: #0b090aff;
+  --eerie-black: #171717ff;
+  --blood-red: #660708ff;
+  --ruby-red: #a4161aff;
+  --carnelian: #ba181bff;
+  --imperial-red: #e5383bff;
+  --faded-red: #fc6b6e;
+  --darkish-grey: #696969;
+  --black-shadows: #b1a7a6ff;
+  --light-gray: #d3d3d3ff;
+  --cultured: #f5f3f4ff;
+  --white: #ffffffff;
+}
+
+.BgDiv {
+  width: 100%;
+  position: relative;
+}
+
+.Bg {
+  display: block;
+  height: 91vh;
+  margin: auto;
+  border-radius: 16px;
+  border-color: var(--carnelian);
+}
+
+.BgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: var(--cultured);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.BgOverlay>* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.BgOverlay:hover {
+  opacity: 1;
+}
+
+.BgOverlay:hover>* {
+  transform: translateY(0);
+}
+
+.BgTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.BgDescription {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}

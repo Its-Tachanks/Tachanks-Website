@@ -22,10 +22,6 @@
   margin: 0;
 }
 
-.columnSmall {
-  flex: 20%;
-}
-
 .linecolumn {
   flex: 2%;
 }

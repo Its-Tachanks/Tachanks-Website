@@ -6,7 +6,7 @@ import "./Home.css";
 
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
-import VideoBg from "./Components/VideoBg/VideoBg";
+import Bg from "./Components/Bg/Bg";
 import Whitespace from "./Components/Whitespace/Whitespace";
 
 // Home-Exclusive Imports
@@ -22,7 +22,7 @@ class Home extends Component {
 
       for (var i = 0; i < tags.length; i++) {
         var tag = tags[i];
-        if ($(tag).position().top < pageBottom - 100) {
+        if ($(tag).position().top < pageBottom - 80) {
           $(tag).addClass("visible");
         } else {
           $(tag).removeClass("visible");
@@ -35,9 +35,10 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <VideoBg />
+        <Bg />
 
         <div className="HomeElements">
+          <Whitespace height="2.5rem" />
           <YeahBitch />
 
           <div className="FadeInLoad">
