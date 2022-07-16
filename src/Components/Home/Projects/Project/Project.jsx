@@ -7,7 +7,7 @@ class Project extends Component {
     return (
       <React.Fragment>
         <a href={this.props.link}>{this.props.title}</a>
-        <p></p>
+        <p>{this.props.description}</p>
       </React.Fragment>
     );
   }

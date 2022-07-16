@@ -55,7 +55,7 @@ class Bg extends Component {
         // eslint-disable-next-line
         break;
       case 6:
-        return "Skinny Pete Saturday";
+        return "Salamanca Saturday";
         // eslint-disable-next-line
         break;
       default:

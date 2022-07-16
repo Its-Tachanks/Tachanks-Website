@@ -23,7 +23,7 @@ class Home extends Component {
 
       for (var i = 0; i < tags.length; i++) {
         var tag = tags[i];
-        if ($(tag).position().top < pageBottom - 80) {
+        if ($(tag).position().top < pageBottom - 30) {
           $(tag).addClass("visible");
         } else {
           $(tag).removeClass("visible");
@@ -56,9 +56,13 @@ class Home extends Component {
             <Whitespace height="2rem" />
             <img src="./images/Line.png" alt="Line" className="Line" />
             <Whitespace height="2rem" />
+            <h1 style={{ marginBottom: "1rem" }}>Projects</h1>
           </div>
 
-          <Projects />
+          <div className="FadeInLoad">
+            <Projects />
+          </div>
+          <Whitespace height="4rem" />
         </div>
       </React.Fragment>
     );
