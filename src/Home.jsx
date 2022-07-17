@@ -6,12 +6,13 @@ import "./Home.css";
 
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
-import Bg from "./Components/Bg/Bg";
+import Bg from "./Components/Home/Video/Video";
 import Whitespace from "./Components/Whitespace/Whitespace";
 
 // Home-Exclusive Imports
 import YeahBitch from "./Components/Home/YeahBitch/YeahBitch"
 import ButAnywayCnt from "./Components/Home/ButAnywayCnt/ButAnywayCnt";
+import Projects from "./Components/Home/Projects/Projects";
 
 class Home extends Component {
   componentDidMount() {
@@ -38,7 +39,7 @@ class Home extends Component {
         <Bg />
 
         <div className="HomeElements">
-          <Whitespace height="2rem" />
+          <Whitespace height="2.8rem" />
           <YeahBitch />
 
           <div className="FadeInLoad">
@@ -50,6 +51,14 @@ class Home extends Component {
           </div>
 
           <ButAnywayCnt />
+
+          <div className="FadeInLoad">
+            <Whitespace height="2rem" />
+            <img src="./images/Line.png" alt="Line" className="Line" />
+            <Whitespace height="2rem" />
+          </div>
+
+          <Projects />
         </div>
       </React.Fragment>
     );

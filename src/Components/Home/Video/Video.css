@@ -16,6 +16,7 @@
 .BgDiv {
   width: 100%;
   position: relative;
+  max-width: 100%;
 }
 
 .Bg {
@@ -23,6 +24,7 @@
   height: 91vh;
   margin: auto;
   border-radius: 16px;
+  max-width: 100%;
   border-color: var(--carnelian);
 }
 

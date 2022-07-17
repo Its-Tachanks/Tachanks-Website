@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import $ from "jquery"
 // eslint-disable-next-line
 
-import "./Bg.css";
+import "./Video.css";
 
 class Bg extends Component {
   render() {
