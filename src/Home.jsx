@@ -38,7 +38,7 @@ class Home extends Component {
         <Bg />
 
         <div className="HomeElements">
-          <Whitespace height="2.5rem" />
+          <Whitespace height="2rem" />
           <YeahBitch />
 
           <div className="FadeInLoad">
