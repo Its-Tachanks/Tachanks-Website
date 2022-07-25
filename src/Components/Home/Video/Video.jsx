@@ -7,7 +7,7 @@ import "./Video.css";
 class Bg extends Component {
   render() {
     return (
-      <div className="BgDiv">
+      <div className="BgDiv" title="Click to unmute!">
         <video
           autoPlay
           loop

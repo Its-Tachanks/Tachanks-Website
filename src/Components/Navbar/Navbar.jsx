@@ -4,10 +4,15 @@ import ReactTypingEffect from "react-typing-effect";
 import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
+  componentDidMount() {
+    const scriptTag = document.createElement("script");
+    scriptTag.src = "./Scripts/Scrolling.js";
+    document.body.appendChild(scriptTag);
+  }
   render = () => {
     return (
       <React.Fragment>
-        <nav className="Navbar">
+        <nav className="Navbar" id="Navbar">
           <Link to="/" className="NavbarTitle">
             <img
               src="./images/NavbarLogo.png"
@@ -30,10 +35,11 @@ class Navbar extends Component {
             </li>
           </ul>
         </nav>
-        <div className="NavbarSpacer"></div>
       </React.Fragment>
     );
   };
+
+  scrollStuff;
 }
 
 export default Navbar;

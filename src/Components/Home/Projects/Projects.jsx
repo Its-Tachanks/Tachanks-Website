@@ -9,7 +9,7 @@ class Projects extends Component {
     return (
       <div className="row">
         <ul
-          style={{ textAlign: "center", "list-style": "none" }}
+          style={{ textAlign: "center", "listStyle": "none" }}
           className="Projects column"
         >
           <li className="proj">
@@ -21,7 +21,7 @@ class Projects extends Component {
           </li>
         </ul>
         <ul
-          style={{ textAlign: "center", "list-style": "none" }}
+          style={{ textAlign: "center", "listStyle": "none" }}
           className="Projects column"
         >
           <li className="proj">
