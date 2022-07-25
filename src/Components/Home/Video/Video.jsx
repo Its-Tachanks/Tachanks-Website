@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import $ from "jquery"
 // eslint-disable-next-line
 
 import "./Video.css";
