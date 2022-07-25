@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import $ from "jquery";
 
 // CSS Import
-import "./Home.css";
+import "./LandingPage.css";
 
 // Component Imports
 import Navbar from "./Components/Navbar/Navbar";
-import Bg from "./Components/Home/Video/Video";
+import Bg from "./Components/LandingPage/Video/Video";
 import Whitespace from "./Components/Whitespace/Whitespace";
 
-// Home-Exclusive Imports
-import YeahBitch from "./Components/Home/YeahBitch/YeahBitch"
-import ButAnywayCnt from "./Components/Home/ButAnywayCnt/ButAnywayCnt";
-import Projects from "./Components/Home/Projects/Projects";
+// LandingPage-Exclusive Imports
+import YeahBitch from "./Components/LandingPage/YeahBitch/YeahBitch"
+import ButAnywayCnt from "./Components/LandingPage/ButAnywayCnt/ButAnywayCnt";
+import Projects from "./Components/LandingPage/Projects/Projects";
 
-class Home extends Component {
+class LandingPage extends Component {
   componentDidMount() {
     $(document).on("scroll", function () {
       var pageTop = $(document).scrollTop();
@@ -38,7 +38,7 @@ class Home extends Component {
         <Navbar />
         <Bg />
 
-        <div className="HomeElements">
+        <div className="LandingPageElements">
           <Whitespace height="2.8rem" />
           <YeahBitch />
 
@@ -77,4 +77,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default LandingPage;

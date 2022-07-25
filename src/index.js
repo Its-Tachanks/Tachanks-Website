@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from "./Home";
+import LandingPage from "./LandingPage";
 import Games from "./Games";
 import Random from "./Random";
 
@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/games" element={<Games />} />
       <Route path="/random" element={<Random />} />
     </Routes>

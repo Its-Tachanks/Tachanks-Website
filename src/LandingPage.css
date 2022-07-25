@@ -22,13 +22,13 @@ body {
   box-sizing: border-box;
 }
 
-.HomeElements {
+.LandingPageElements {
   background-color: var(--eerie-black);
   color: var(--cultured);
   text-align: center;
 }
 
-.HomeElements h1 {
+.LandingPageElements h1 {
   margin-bottom: .5rem;
   align-items: center;
   font-size: 32px;
