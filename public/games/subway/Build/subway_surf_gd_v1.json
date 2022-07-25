@@ -1,0 +1,13 @@
+{
+"companyName": "Subway Surf",
+"productName": "Subway Surf",
+"dataUrl": "subway_surf_gd_v1.data.unityweb",
+"wasmCodeUrl": "subway_surf_gd_v1.wasm.code.unityweb",
+"wasmFrameworkUrl": "subway_surf_gd_v1.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"}
+}
